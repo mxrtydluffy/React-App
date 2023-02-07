@@ -1,2 +1,2 @@
 # React Tutorial
-Creating a React application web site for the San Francisco's Privately Owned Public Spaces.
+Creating a React application website for the San Francisco's Privately Owned Public Spaces.
