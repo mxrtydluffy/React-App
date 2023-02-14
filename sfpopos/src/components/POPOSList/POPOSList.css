@@ -1,0 +1,67 @@
+.POPOSList {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2em;
+	max-width: 1200px;
+	margin: auto;
+	padding: 2em;
+}
+
+/* Animation */
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#list-button {
+
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid #ff4742;
+  color: #ff4742;
+  background: 0 0;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+  font-weight: 800;
+  font-size: 16px;
+  height: 42px;
+}
+
+/* Small screens mobile */
+@media only screen and (max-width: 700px) {
+	.POPOSList {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* smaller screens and tbalets */
+@media only screen and (max-width: 960px) {
+    .POPOSList {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+.POPOSList form {
+	display: flex;
+	align-items: flex-start;
+}
+
+.POPOSList form input, .POPOSList form button {
+	padding: 1em;
+	margin: 0;
+	border: 1px solid;
+	font-size: 1rem;
+}
+
+.POPOSList form input {
+	flex: 1;
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+
+.POPOSList form button {
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
