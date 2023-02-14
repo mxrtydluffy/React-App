@@ -11,7 +11,7 @@ function POPOSSpace(props) {
         </Link>
       </h1>
       <Link to={`/details/${id}`}>
-        <img src={`${process.env.PUBLIC_URL}/images/${image}`} width="300" height="300" alt="Hello"/>
+        <img src={`${process.env.PUBLIC_URL}/images/${image}`} width="350" height="350" alt="box"/>
       </Link>
       <div className='POPOSSpace-info'>
         <div>{address}</div>
@@ -21,4 +21,4 @@ function POPOSSpace(props) {
   )
 }
 
-export default POPOSSpace
+export default POPOSSpace;

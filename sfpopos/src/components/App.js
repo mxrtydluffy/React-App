@@ -1,17 +1,15 @@
 // import React from 'react';
 import { Outlet } from 'react-router-dom';
-import POPOSDetails from './POPOSDetails/POPOSinfo.css'
 
 import './App.css';
 import Title from './Title/Title';
-import POPOSList from './POPOSList/POPOSList';
 import Footer from './Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Title />
-      <POPOSList />
+      <Outlet />
       <Footer />
     </div>
   );

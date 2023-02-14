@@ -3,8 +3,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
     padding: 1em;
+    border-bottom: 1px solid black;
     margin-bottom: 2em;
     background-color: rgb(192, 45, 26);
     color: #fff;
@@ -12,6 +14,12 @@
 
   .Title-Subtitle {
     color: rgba(255, 255, 255, 0.75);
+  }
+
+  .navBar, h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .Title a {

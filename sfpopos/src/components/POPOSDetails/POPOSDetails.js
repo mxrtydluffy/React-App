@@ -26,4 +26,4 @@ function POPOSDetails() {
     )
 }
 
-export default POPOSDetails
+export default POPOSDetails;

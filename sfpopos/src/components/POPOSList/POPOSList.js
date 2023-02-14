@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from '../../sfpopos-data.js';
 import POPOSSpace from '../POPOSSpace/POPOSSpace';
 import './POPOSList.css';
-import { useState } from 'react'
 
 function POPOSList() {
     const [ query, setQuery ] = useState('');
@@ -22,22 +21,25 @@ function POPOSList() {
         />
       )
     })
-  
+
     return (
-      <div className="POPOSList">
-            <form>
-                <input
-                    value={query}
-                    placeholder="search"
-                    onChange={(e) => setQuery(e.target.value)}
-                />
-                <button type="submit">Submit</button>
-            </form>
-            {spaces}
-      </div>
-    )
-    
-  }
-    
-  
-  export default POPOSList
+        <>  
+            <div className='topnav'>
+                <form>
+                    <input
+                        value={query}
+                        placeholder="search"
+                        onChange={(e) => setQuery(e.target.value)}
+                    />
+                    <button id='list-button' type="submit">search</button>
+                </form>
+            </div>
+
+            <div className='POPOSList'>
+                {spaces}
+            </div>
+        </>
+        )
+    }
+      
+export default POPOSList;
