@@ -4,6 +4,12 @@ Creating a React application website for the San Francisco's Privately Owned Pub
 ## How to use
 Navigate to sfpopos directory and follow the instructions from there.
 
+Then run
+```bash
+npm install
+npm start
+```
+
 ## Credits
 [React Tutorial](https://github.com/MakeSchool-Tutorials/React-Fundamentals) was originally made from Make School. Contributors include:
 * [Mitchell Hudson](https://github.com/soggybag)
