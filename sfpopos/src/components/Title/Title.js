@@ -1,18 +1,27 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import './Title.css';
+import './Title.css';
+import RandomSpace from '../RandomSpace/RandomSpace';
 
 function Title() {
-    return (
-      <header>
-        <div className='Title'>
-          <h1>SFPOPOS</h1>
-          <div className="Title-Subtitle">
-            <h2>San Francisco Privately Owned Public Spaces</h2>
-          </div>
-        </div>
-      </header>
-    )
+  return (
+    <div className='Title'>
+    <header>
+      <h1>SFPOPOS</h1>
+      <div className='Title-Subtitle'>San Francisco Privately Owned Public Open Spaces</div>
+
+      <div>
+        <NavLink 
+          className={({ isActive }) => isActive ? 'nav-link-active' : 'nav-link' }
+          to="/">List</NavLink>
+        <NavLink 
+          className={({ isActive }) => isActive ? 'nav-link-active' : 'nav-link' }
+          to="/about">About</NavLink>
+        <RandomSpace />
+      </div>
+
+    </header>
+  </div>
+  )
 }
 
 export default Title

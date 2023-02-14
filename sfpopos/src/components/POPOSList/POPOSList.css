@@ -1,7 +1,45 @@
 .POPOSList {
-    width: calc(100% - 80px);
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-  }
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2em;
+	max-width: 1200px;
+	margin: auto;
+	padding: 2em;
+}
+
+/* Small screens mobile */
+@media only screen and (max-width: 700px) {
+	.POPOSList {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* smaller screens and tbalets */
+@media only screen and (max-width: 960px) {
+    .POPOSList {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+.POPOSList form {
+	display: flex;
+	align-items: flex-start;
+}
+
+.POPOSList form input, .POPOSList form button {
+	padding: 1em;
+	margin: 0;
+	border: 1px solid;
+	font-size: 1rem;
+}
+
+.POPOSList form input {
+	flex: 1;
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+
+.POPOSList form button {
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
