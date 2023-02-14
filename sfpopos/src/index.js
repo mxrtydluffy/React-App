@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 // Setting up Router
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import About from './About'
-import POPOSList from './POPOSList'
+import About from './components/About/About'
+import POPOSList from './components/POPOSList/POPOSList'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
